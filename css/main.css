@@ -1,0 +1,178 @@
+/* General Styling */
+body {
+    background-color: #F5F5F5;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.flex {
+	display: flex;
+}
+
+a {
+	color: #000;
+}
+
+a:hover {
+	opacity: 0.70;
+	text-decoration: none;
+	color: #000;
+}
+
+.dropdown a::after {
+	display: inline-block;
+	margin-left: .255em;
+	vertical-align: .255em;
+	content: "";
+	border-top: .3em solid;
+	border-right: .3em solid transparent;
+	border-bottom: 0;
+	border-left: .3em solid transparent;
+}
+
+/* Navigation */
+#thomas-head {
+	font-weight: 900;
+	font-size: 18pt;
+	padding-top: 15px;
+	padding-left: 15px;
+}
+
+/* Navigation bar */
+#navigation-bar-div {
+    justify-content: center;
+    padding-top: 5px;
+}
+
+#navigation-bar-div a {
+	color: #000;
+	font-weight: 700
+}
+
+/* Archiv */
+#archiv-tiles-div {
+	justify-content: center;
+	visibility: hidden;
+}
+
+#archiv-tiles-div ul {
+	width: 50%;
+}
+
+#archiv-tiles-div li {
+	width: 25%;
+}
+
+#archiv-tiles-div a {
+	text-align: center;
+	color: #000;
+}
+
+/* Arbeiten */
+#arbeiten-tiles-div {
+	display: none;
+}
+
+.arbeiten-row-div {
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.arbeiten-single-div {
+	height: 225px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.arbeiten-single-img {
+	width: auto;
+	height: 90%;
+}
+
+.arbeiten-single-img:hover {
+    opacity: 0.65;
+}
+
+
+/* Home Page Specific Styling */
+body.home #arbeiten-tiles-div {
+	display: block;
+}
+
+body.home #a-arbeiten {
+	opacity: 0.5;
+}
+
+/* Main Content */
+#main-content {
+	margin: auto;
+	width: 75%;
+	max-width: 1000px;
+	padding-top: 75px;
+}
+
+.arbeiten-works-list {
+	width: 40%;
+	padding-right: 25px;
+}
+
+.arbeiten-works-list ul {
+	padding-left: 20px;
+	list-style-type: none;
+}
+
+.arbeiten-works-list li {
+	padding-bottom: 20px;
+}
+
+.arbeiten-works-list a:hover {
+	text-decoration: underline;
+}
+
+.arbeiten-featured-media {
+	width: 50%;
+}
+
+.arbeiten-audio {
+	padding-top: 25px;
+	width: 20%;
+	margin-left: 50%;
+	min-width: 200px;
+}
+
+.back-button {
+	padding-top: 50px;
+	padding-bottom: 25px;
+}
+
+/*Audio Player */
+.mejs-container, .mejs-container .mejs-controls, .mejs-embed, .mejs-embed body
+{
+background: #bbc6d5 !important;
+}
+
+.mejs-horizontal-volume-slider { display: none !important; }
+
+/* Single Content */
+.single-image-div img {
+	width: 100%;
+}
+
+.single-arbeiten-audio {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	width: 100%;
+	float: left;
+}
+
+.single-video-div {
+  position: relative;
+  padding: 100% 0 0 0;
+}
+
+.single-video-div iframe {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
