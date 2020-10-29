@@ -11,8 +11,8 @@
 		    	<a id="a-arbeiten" class="nav-link" onclick="showArbeiten()" href="#">Arbeiten</a>
 		  	</li>
 
-			<li class="dropdown">
-				<a id="a-archiv" class="nav-link dropdown" onclick="showArchiv()" href="#">Archiv</a>
+			<li>
+				<a id="a-archiv" class="nav-link" href="<?php echo get_site_url();?>/archiv/"Archiv>Archiv</a>
 			</li>
 
 			<li>
@@ -94,29 +94,6 @@
 	
 	</div>
 
-	<div id="archiv-tiles-div" class="flex"> 
-
-		<ul class="nav">
-			<li>
-		    	<a class="nav-link" href="<?php echo get_site_url();?>/archiv/1980-1989">1980 - 1989</a>
-		  	</li>
-
-			<li>
-		    	<a class="nav-link" href="<?php echo get_site_url();?>/archiv/1990-1999">1990 - 1999</a>
-		  	</li>
-
-		  	<li>
-		    	<a class="nav-link" href="<?php echo get_site_url();?>/archiv/2000-2009">2000 - 2009</a>
-		  	</li>
-
-		  	<li>
-		    	<a class="nav-link" href="<?php echo get_site_url();?>/archiv/2010-2019">2009 - 2019</a>
-		  	</li>
-
-		</ul>
-
-	</div>
-
 	<?php get_template_part('includes/section','arbeitentiles');?>
 
 </div>
@@ -142,26 +119,14 @@
 
 	}
 
-	function showArchiv() {
-	    var archiv_div = document.getElementById("archiv-tiles-div")
-	    var visibility = window.getComputedStyle(archiv_div).visibility
-
-	    console.log(archiv_div, visibility)
-
-	    if (visibility == 'hidden') {
-	  	    archiv_div.style.visibility = 'visible'
-	  	    document.getElementById("a-archiv").style.opacity =  .5
-	    }
-	    else if (visibility == 'visible') {
-	  	    archiv_div.style.visibility = 'hidden'
-	  	    document.getElementById("a-archiv").style.opacity =  1
-	    }
-	}
-
 	function showSubLinkText() {
 		var sub_link_div = document.getElementById("text-sub-link")
 	    
 	    sub_link_div.style.display = 'block'
+
+	    sub_link_div.style.webkitAnimationName = 'fadeIn'; 
+    	sub_link_div.style.webkitAnimationDuration = '2s';
+
 	  	document.getElementById("a-text").style.opacity =  .5
 	}
 
