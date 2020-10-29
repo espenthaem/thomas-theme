@@ -1,8 +1,8 @@
-<div id="main-navigation-div">
-
-	<div id="thomas-head">
+<div id="thomas-head">
 		<a href="<?php echo get_site_url();?>">Thomas Schulz</a>
-	</div>
+</div>
+
+<div id="main-navigation-div">
 
 	<div id="navigation-bar-div" class=" flex">
 		
@@ -127,12 +127,17 @@
 	    var display = window.getComputedStyle(arbeiten_div).display
 	    // Change display style
 	    if (display == 'block') {
-	  	    arbeiten_div.style.display = 'none'
-	  	    document.getElementById("a-text").style.opacity =  1.0
+    	    arbeiten_div.style.display = 'none'
+
+	  	    document.getElementById("a-arbeiten").style.opacity =  1.0
 	    }
 	    else if (display == 'none') {
 	  	   arbeiten_div.style.display = 'block'
-	  	   document.getElementById("a-text").style.opacity =  .5
+
+	  	   arbeiten_div.style.webkitAnimationName = 'fadeIn'; 
+    	   arbeiten_div.style.webkitAnimationDuration = '2s';
+
+	  	   document.getElementById("a-arbeiten").style.opacity =  .5
 	    }
 
 	}
@@ -148,7 +153,6 @@
 	  	    document.getElementById("a-archiv").style.opacity =  .5
 	    }
 	    else if (visibility == 'visible') {
-	    	console.log('HOI')
 	  	    archiv_div.style.visibility = 'hidden'
 	  	    document.getElementById("a-archiv").style.opacity =  1
 	    }
