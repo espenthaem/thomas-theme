@@ -1,7 +1,7 @@
 /* General Styling */
 body {
     background-color: #F5F5F5;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .flex {
@@ -90,12 +90,12 @@ a:hover {
 
 /* Arbeiten */
 #arbeiten-tiles-div {
-	display: none;
+	display: block;
 }
 
 .arbeiten-row-div {
     justify-content: space-between;
-    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .arbeiten-single-div {
