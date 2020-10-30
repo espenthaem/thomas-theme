@@ -212,6 +212,49 @@ background: #bbc6d5 !important;
 	padding-bottom: 25px;
 }
 
+#archiv-form {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 25px;
+}
+
+/* Checkbox styling */
+#searchType ul {
+	padding-left: 0px;
+}
+
+#ck-button {
+    background-color:#EFEFEF;
+    border-radius:4px;
+    border:1px solid #D0D0D0;
+    overflow:auto;
+    float:left;
+}
+
+#ck-button:hover {
+    background: darkgrey;
+}
+
+#ck-button label {
+    float:left;
+    margin-bottom: 0px;
+}
+
+#ck-button label span {
+    text-align:center;
+    display:block;
+}
+
+#ck-button label input {
+    position:absolute;
+    top:-20px;
+}
+
+#ck-button input:checked + span {
+    background-color: darkgrey;
+    color:#fff;
+}
+
 /* Scrolling tiles */
 .scrolling-wrapper {
   display: flex;

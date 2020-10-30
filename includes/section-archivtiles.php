@@ -1,11 +1,13 @@
 <div class="scrolling-wrapper">
 
 	<?php
+
 	    $query_args = array(
 	        'post_type' => 'post',
 	        'order-by' => 'date',
 	        'order' => 'ASC',
-	        'category_name' => $args['category_name']
+	        'category_name' => $args['category_name'],
+	        'tag' => $args['tags']
 		    );
 
 	    $post_query = new WP_Query($query_args);
