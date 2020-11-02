@@ -225,6 +225,10 @@ background: #bbc6d5 !important;
 }
 
 /* Checkbox styling */
+.customsearchul {
+	display: flex;
+}
+
 #searchType ul {
 	padding-left: 0px;
 }
@@ -235,6 +239,7 @@ background: #bbc6d5 !important;
     border:1px solid #D0D0D0;
     overflow:auto;
     float:left;
+    margin-right: 5px;
 }
 
 #ck-button:hover {

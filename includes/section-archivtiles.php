@@ -19,12 +19,15 @@
 	            ?>
 	         
 	            <div class="archiv-card">
-	            	
-	            	<p>
-	            		<?php the_title(); ?>
-	            	</p>
 
-	            	<img class="archiv-single-img" src="<?php the_post_thumbnail_url('medium-extra');?>">
+	            	<a href=<?php echo the_permalink();?>>
+	            	
+		            	<p>
+		            		<?php the_title(); ?>
+		            	</p>
+
+		            	<img class="archiv-single-img" src="<?php the_post_thumbnail_url('medium-extra');?>">
+		            </a>
 
 	        	</div>
 	            
