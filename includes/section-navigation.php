@@ -20,8 +20,7 @@
 			</li>
 
 			<li>
-				<div onmouseover="showSubLinkText()" onmouseout="hideSublinkText()">
-				    <a id="a-text" class="nav-link" href="#">Text</a>
+				<div onmouseover="showSubLinkText('text-sub-link')" onmouseout="hideSublinkText('text-sub-link')">
 				    
 				    <div id="text-sub-link"  class="sub-link-div">
 
@@ -54,12 +53,16 @@
 						<?php wp_reset_postdata(); ?>
 
 				    </div>
+
+				    <a id="a-text" class="nav-link" href="#">Text</a>
+
 				</div>
 			</li>
 
 			<li>
-			    <a class="nav-link" href="<?php echo get_site_url();?>/kontakt/">Kontakt</a>
 
+				<div onmouseover="showSubLinkText('kontakt-sub-link')" onmouseout="hideSublinkText('kontakt-sub-link')">
+			    
 			    	<div id="kontakt-sub-link" class="sub-link-div">
 			    
 				    	<?php
@@ -89,7 +92,12 @@
 						} ?>
 
 						<?php wp_reset_postdata(); ?>
-			    </div>
+				    </div>
+
+				  	<a class="nav-link" href="<?php echo get_site_url();?>/kontakt/">Kontakt</a>
+
+				</div>
+
 			</li>
 
 		</ul>
@@ -99,10 +107,12 @@
 </div>
 
 <script>
-	function showSubLinkText() {
-		var sub_link_div = document.getElementById("text-sub-link")
-	    
-	    sub_link_div.style.display = 'block'
+	function showSubLinkText(value) {
+		var sub_link_div = document.getElementById(value)
+
+		console.log(value)
+
+	    sub_link_div.style.visibility = 'visible'
 
 	    sub_link_div.style.webkitAnimationName = 'fadeIn'; 
     	sub_link_div.style.webkitAnimationDuration = '2s';
@@ -110,10 +120,10 @@
 	  	document.getElementById("a-text").style.opacity =  .5
 	}
 
-	function hideSublinkText() {
-		var sub_link_div = document.getElementById("text-sub-link")
+	function hideSublinkText(value) {
+		var sub_link_div = document.getElementById(value)
 
-		sub_link_div.style.display = 'none'
+		sub_link_div.style.visibility = 'hidden'
 	  	document.getElementById("a-text").style.opacity =  1
 	    
 	}

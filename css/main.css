@@ -50,7 +50,7 @@ a:hover {
 /* Navigation bar */
 #navigation-bar-div {
     justify-content: center;
-    padding-top: 5px;
+    padding-top: 0px;
 }
 
 #navigation-bar-div a {
@@ -58,8 +58,14 @@ a:hover {
 	font-weight: 700
 }
 
+#navigation-bar-div li {
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column; 
+}
+
 .sub-link-div {
-	display: none;
+	visibility: hidden;
 }
 
 #navigation-bar-div .sub-link-div a {
