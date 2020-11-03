@@ -1,9 +1,3 @@
-<div class="back-button flex" style="justify-content: center">
-
-	<a href="<?php echo get_site_url(); ?>">Zurück</a>
-
-</div>
-
 <footer>
 </footer>
 
