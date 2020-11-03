@@ -22,6 +22,8 @@
 			<li>
 				<div onmouseover="showSubLinkText('text-sub-link')" onmouseout="hideSublinkText('text-sub-link')">
 				    
+					<a id="a-text" class="nav-link" href="#">Text</a>
+
 				    <div id="text-sub-link"  class="sub-link-div">
 
 				    	<?php
@@ -54,8 +56,6 @@
 
 				    </div>
 
-				    <a id="a-text" class="nav-link" href="#">Text</a>
-
 				</div>
 			</li>
 
@@ -63,6 +63,8 @@
 
 				<div onmouseover="showSubLinkText('kontakt-sub-link')" onmouseout="hideSublinkText('kontakt-sub-link')">
 			    
+			    	<a class="nav-link" href="<?php echo get_site_url();?>/kontakt/">Kontakt</a>
+
 			    	<div id="kontakt-sub-link" class="sub-link-div">
 			    
 				    	<?php
@@ -93,8 +95,6 @@
 
 						<?php wp_reset_postdata(); ?>
 				    </div>
-
-				  	<a class="nav-link" href="<?php echo get_site_url();?>/kontakt/">Kontakt</a>
 
 				</div>
 
