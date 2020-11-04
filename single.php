@@ -10,7 +10,19 @@ Template Name: Arbeiten
 
 <div id="main-content">
 
-	<div class="">
+	<?php 
+		/* Save post ID for later use, and set post variable to category page */
+		$single_ID = $post->ID;
+		$single_category = get_the_category($single_ID)[0]->name;
+		$post = get_page_by_path('/arbeiten/the-european-sculpture');
+	?>
+
+	<!--Load category header based on the category post variable -->
+	<?php get_template_part('includes/section','arbeiten-category');?>
+
+	<!-- Reset post variable -->
+	<?php $post = get_post($single_ID);?>
+	<div class="single-arbeiten-content">
 		<!--Insert main image -->
 		<div class="single-image-div">
 			<img src="<?php the_post_thumbnail_url('full');?>" alt="<?php the_title();?>">
@@ -18,7 +30,6 @@ Template Name: Arbeiten
 
 		<!--Retrieve audio file link from post META and insert audio player -->
 		<div class="single-arbeiten-audio">
-
 			
 				<?php 
 
@@ -46,7 +57,6 @@ Template Name: Arbeiten
 				<iframe src="<?php echo get_post_meta(get_the_ID(), 'vimeo-link', true);?>?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 			</div>
 		<?php } ?>
-
 
 		<!-- Insert gallery -->
 		<?php get_template_part('includes/section','gallery'); ?>
