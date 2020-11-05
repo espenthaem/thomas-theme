@@ -56,15 +56,64 @@ Template Name: Archiv
 	</div>
 
 	<div class="archiv-container">
+
+		<div class="archiv-period-title">
+			<h2>2010-2019</h2>
+		</div>
 		
 		<?php get_template_part('includes/section','archivtiles',
 		      	array( 
-                    'category_name' => '',
+	               'category_name' => 'archiv-2010-2019',
+	               'tags' => $selected_tags
+	            )
+	    );?>
+		
+	</div>
+
+	<div class="archiv-container">
+
+		<div class="archiv-period-title">
+			<h2>2000-2009</h2>
+		</div>
+		
+		<?php get_template_part('includes/section','archivtiles',
+		      	array( 
+                    'category_name' => 'archiv-2000-2009',
                     'tags' => $selected_tags
                 )
         );?>
 		
 	</div>
+
+	<div class="archiv-container">
+
+		<div class="archiv-period-title">
+			<h2>1990-1999</h2>
+		</div>
+		
+		<?php get_template_part('includes/section','archivtiles',
+		      	array( 
+                    'category_name' => 'archiv-1990-1999',
+                    'tags' => $selected_tags
+                )
+        );?>
+		
+	</div>
+
+	<div class="archiv-container">
+
+		<div class="archiv-period-title">
+			<h2>1980-1989</h2>
+		</div>
+		<?php get_template_part('includes/section','archivtiles',
+		      	array( 
+                    'category_name' => 'archiv-1980-1989',
+                    'tags' => $selected_tags
+                )
+        );?>
+		
+	</div>
+
 
 </div>
 

@@ -249,6 +249,10 @@ background: #bbc6d5 !important;
 	padding-bottom: 25px;
 }
 
+.archiv-period-title {
+	text-align: right;
+}
+
 /* Checkbox styling */
 .customsearchul {
 	display: flex;
