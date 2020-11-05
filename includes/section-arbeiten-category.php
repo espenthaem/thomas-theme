@@ -1,7 +1,3 @@
-<div class="arbeiten-category-title">
-	<h2><?php the_title();?></h2>
-</div>
-
 <div class="flex" style="justify-content: space-between;">
 
 	<?php 
@@ -10,6 +6,10 @@
 	?>
 
 	<div class="arbeiten-works-list">
+		<div class="arbeiten-category-title">
+			<h2><?php the_title();?></h2>
+		</div>
+
 		<?php
 	    $args = array(
 	        'post_type' => 'post',
@@ -42,7 +42,6 @@
 		<?php wp_reset_query() ?>
 
 	</div>
-
 
 	<div class="arbeiten-featured-media">
 		<?php if(get_post_meta($category_id, 'vimeo-link', false ) ) { ?>
