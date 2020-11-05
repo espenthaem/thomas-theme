@@ -14,11 +14,16 @@ Template Name: Arbeiten
 		/* Save post ID for later use, and set post variable to category page */
 		$single_ID = $post->ID;
 		$single_category = get_the_category($single_ID)[0]->name;
-		$post = get_page_by_path('/arbeiten/the-european-sculpture');
-	?>
 
-	<!--Load category header based on the category post variable -->
-	<?php get_template_part('includes/section','arbeiten-category');?>
+		if (is_int(strpos($single_category, 'archiv'))) {
+			
+		}
+		else{
+			$post = get_page_by_path('/arbeiten/' . $single_category);
+			/*Load category header based on the category post variable */
+ 			get_template_part('includes/section','arbeiten-category'); 
+		}
+	?>
 
 	<!-- Reset post variable -->
 	<?php $post = get_post($single_ID);?>
