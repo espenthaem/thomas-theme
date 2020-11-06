@@ -34,19 +34,23 @@ Template Name: Arbeiten
 		</div>
 
 		<!--Retrieve audio file link from post META and insert audio player -->
-		<div class="single-arbeiten-audio">
-			
-				<?php 
 
-				$attr = array(
-			    	'src'      => get_post_meta(get_the_ID(), 'audio-link', true),
-			    	'loop'     => '',
-			    	'autoplay' => '',
-			    	'preload' => 'none'
-				);
+		<?php if(get_post_meta(get_the_ID(), 'audio-link', false ) ) { ?>
 
-			    echo wp_audio_shortcode($attr); ?>
-		</div>
+			<div class="single-arbeiten-audio">
+				
+					<?php 
+
+					$attr = array(
+				    	'src'      => get_post_meta(get_the_ID(), 'audio-link', true),
+				    	'loop'     => '',
+				    	'autoplay' => '',
+				    	'preload' => 'none'
+					);
+
+				    echo wp_audio_shortcode($attr); ?>
+			</div>
+		<?php } ?>
 
 		<!-- Insert the content -->
 		<div class="single-text-div">
