@@ -7,7 +7,9 @@
 
 	<div class="arbeiten-works-list">
 		<div class="arbeiten-category-title">
-			<h2><?php the_title();?></h2>
+			<a href="<?php echo the_permalink();?>">
+				<h2><?php the_title();?></h2>
+			</a>
 		</div>
 
 		<?php

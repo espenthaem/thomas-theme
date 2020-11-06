@@ -1,6 +1,6 @@
 /* General Styling */
 body {
-    background-color: #F5F5F5;
+    background-color: #f2f0f0;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -40,7 +40,7 @@ a:hover {
 }
 
 #thomas-head {
-	font-weight: 900;
+	font-weight: 400;
 	font-size: 18pt;
 	padding-top: 15px;
 	padding-left: 15px;
@@ -54,7 +54,7 @@ a:hover {
 
 #navigation-bar-div a {
 	color: #000;
-	font-weight: 700
+	font-weight: 400
 }
 
 #navigation-bar-div li {
@@ -220,6 +220,11 @@ background: #bbc6d5 !important;
 .mejs-horizontal-volume-slider { display: none !important; }
 
 /* Single Content */
+.single-arbeiten-content {
+  padding-top: 50px;
+}
+
+
 .single-image-div img {
 	width: 100%;
 }
