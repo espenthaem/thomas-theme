@@ -224,10 +224,12 @@ background: #bbc6d5 !important;
   padding-top: 50px;
 }
 
+.single-image-div {
+  padding-bottom: 25px
+}
 
 .single-image-div img {
 	width: 100%;
-  padding-bottom: 25px;
 }
 
 .single-arbeiten-audio {
@@ -239,7 +241,7 @@ background: #bbc6d5 !important;
 
 .single-video-div {
   position: relative;
-  padding: 75% 0 0 0;
+  padding: 73.17% 0 0 0;
   padding-bottom: 30px;
 }
 
@@ -249,6 +251,10 @@ background: #bbc6d5 !important;
   left:0;
   width:100%;
   height:100%;
+}
+
+#single-gallery-div {
+  padding-top: 25px;
 }
 
 /* Archiv Styling */
