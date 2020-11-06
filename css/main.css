@@ -227,6 +227,7 @@ background: #bbc6d5 !important;
 
 .single-image-div img {
 	width: 100%;
+  padding-bottom: 25px;
 }
 
 .single-arbeiten-audio {
@@ -239,6 +240,7 @@ background: #bbc6d5 !important;
 .single-video-div {
   position: relative;
   padding: 75% 0 0 0;
+  padding-bottom: 30px;
 }
 
 .single-video-div iframe {
