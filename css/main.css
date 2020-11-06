@@ -147,6 +147,12 @@ body.home #a-arbeiten {
 	width: 70%;
 	max-width: 1000px;
 	padding-top: 15px;
+	padding-bottom: 25px;
+}
+
+.arbeiten-category-div {
+	display: flex;
+	justify-content: space-between;
 }
 
 .arbeiten-category-title {
@@ -333,3 +339,70 @@ background: #bbc6d5 !important;
   outline: 1px solid slategrey;
 }
 
+/* Mobile */
+@media only screen and (max-width: 1000px) {
+  #main-navigation-div {
+    width: 90%; 
+    padding-left: 5%;
+    font-size: 22pt;
+  }
+
+  #thomas-head {
+    font-size: 29pt;
+  }
+
+  #main-content {
+    width: 100%;
+    margin-left: 0px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .arbeiten-category-div {
+  	flex-direction: column;
+  }
+
+  #main-content .arbeiten-featured-media {
+  	width: 100%;
+  }
+
+  #main-content .arbeiten-works-list {
+  	width: 100%;
+  }
+
+  #main-content .arbeiten-audio {
+  	width: 100%;
+  	margin-left: 0%;
+  }
+  #main-content p {
+    font-size: 22pt; 
+  }
+
+  #main-content a {
+    font-size: 22pt; 
+  }
+
+  #main-content h2 {
+  	font-size: 27pt;
+  }
+
+  #archiv-form {
+  	font-size: 22pt;
+  }
+
+  .archiv-card {
+  	width: 95% !important;
+  	margin-right: 5% !important;
+  }
+
+  .scrolling-wrapper::-webkit-scrollbar {
+  	width: 1em;
+  	height: 20px;
+  }
+
+  .scrolling-wrapper {
+	scrollbar-width: auto;
+	scrollbar-color: darkgrey;
+  }
+
+}

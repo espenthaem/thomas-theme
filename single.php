@@ -16,7 +16,7 @@ Template Name: Arbeiten
 		$single_category = get_the_category($single_ID)[0]->name;
 
 		if (is_int(strpos($single_category, 'archiv'))) {
-			
+
 		}
 		else{
 			$post = get_page_by_path('/arbeiten/' . $single_category);

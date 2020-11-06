@@ -1,4 +1,4 @@
-<div class="flex" style="justify-content: space-between;">
+<div class="arbeiten-category-div">
 
 	<?php 
 		/* Save id of the category page for later use */
