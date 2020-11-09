@@ -27,14 +27,10 @@
 				<!-- Fill exhibition block with the appropriate content -->
 				<div class="arbeiten-single-div"> 
 
-
 					<a href=<?php the_permalink();?>> 
 	            		<img class="arbeiten-single-img" src="<?php the_post_thumbnail_url('medium-extra');?>">
+	          
 	            	</a>
-
-					<div class="arbeiten-single-title">
-						<p><?php the_title();?></p>
-					</div>
 
 				</div>
 

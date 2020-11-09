@@ -74,25 +74,6 @@ a:hover {
 	display: block;	
 }
 
-/* Archiv */
-#archiv-tiles-div {
-	justify-content: center;
-	visibility: hidden;
-}
-
-#archiv-tiles-div ul {
-	width: 50%;
-}
-
-#archiv-tiles-div li {
-	width: 25%;
-}
-
-#archiv-tiles-div a {
-	text-align: center;
-	color: #000;
-}
-
 /* Arbeiten */
 #arbeiten-tiles-div {
 	display: block;
@@ -100,11 +81,11 @@ a:hover {
 
 .arbeiten-row-div {
     justify-content: space-between;
-    padding-bottom: 25px;
+    padding-bottom: 0px;
 }
 
 .arbeiten-single-div {
-	width: 45%;
+	width: 50%;
 	padding-right: 0%;
 	padding-left: 0%;
 }
@@ -113,8 +94,16 @@ a:hover {
 	width: 100%;
 }
 
-.arbeiten-single-img:hover {
-    opacity: 0.65;
+.arbeiten-single-div a:hover{
+  opacity: 1.0;
+}
+
+.arbeiten-single-div:hover .centered {
+  opacity: 1;
+}
+
+.arbeiten-single-div:hover .arbeiten-single-img {
+  opacity: 0.5;
 }
 
 .arbeiten-text-div {
