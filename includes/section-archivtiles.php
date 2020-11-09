@@ -18,17 +18,31 @@
 	            $post_query->the_post();
 	            ?>
 	         
+	            <?php 
+	            	$img_url = get_the_post_thumbnail_url(get_the_ID(), 'medium-extra');
+	            	global $post;
+	            	$post_name = $post->post_name;
+	            ?>
+           
 	            <div class="archiv-card">
 
-	            	<a href=<?php echo the_permalink();?>>
-	            	
-		            	<p>
-		            		<?php the_title(); ?>
-		            	</p>
+	            	<a href="#" data-featherlight=<?php echo "#" . $post_name;?>>
 
-		            	<img class="archiv-single-img" src="<?php the_post_thumbnail_url('medium-extra');?>">
-		            </a>
+						<div id=<?php echo $post_name;?> class="archiv-card-feather-div">
+							<div class="archiv-single-img">
+								<img src=<?php the_post_thumbnail_url('large');?>>
+							</div>
 
+							<div class="archiv-card-text-div">
+								<?php the_title();?>
+
+								<?php the_content();?>
+							</div>
+
+						</div>
+
+					</a>
+					
 	        	</div>
 	            
 

@@ -262,23 +262,23 @@ background: #bbc6d5 !important;
 	padding-bottom: 25px;
 }
 
-#archiv-form {
-	display: flex;
-	justify-content: space-between;
-	padding-bottom: 25px;
-}
-
 .archiv-period-title {
 	text-align: right;
 }
 
+#archiv-form {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
+}
+
 /* Checkbox styling */
 .customsearchul {
-	display: flex;
+  display: flex;
 }
 
 #searchType ul {
-	padding-left: 0px;
+  padding-left: 0px;
 }
 
 #ck-button {
@@ -324,17 +324,20 @@ background: #bbc6d5 !important;
 
 .scrolling-wrapper .archiv-card {
     flex: 0 0 auto;
-    margin-right: 5%;
-    width: 45%;
+    margin-right: 0%;
 }
 
-.scrolling-wrapper .archiv-card p {
-    padding: 10px 25px 0px 25px;
+.scrolling-wrapper .archiv-card-text-div {
+    display: none;
 }
 
-.scrolling-wrapper .archiv-card .archiv-single-img {
-	padding: 0 25px 0 25px;
-	width: 100%;
+.scrolling-wrapper .archiv-card .archiv-single-img img {
+	padding: 0 5px 0 5px;
+  height: 500px;
+}
+
+.archiv-card-feather-div {
+  display: flex !important;
 }
 
 .scrolling-wrapper::-webkit-scrollbar {
@@ -343,14 +346,55 @@ background: #bbc6d5 !important;
 }
 
 .scrolling-wrapper {
-	scrollbar-width: thin;
-	scrollbar-color: darkgrey;
+  scrollbar-width: thin;
+  scrollbar-color: darkgrey;
 }
 
 .scrolling-wrapper::-webkit-scrollbar-thumb {
   background-color: darkgrey;
   outline: 1px solid slategrey;
 }
+
+/* Archiv tiles styling specifically for inside the featherlight-content */
+.featherlight-content .archiv-card-feather-div {
+  height: 80vh;
+  max-height: 1000px;
+}
+
+.featherlight-content .archiv-single-img {
+  width: 65%;
+  padding-right: 25px;
+}
+
+.featherlight-content .archiv-single-img img {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.featherlight-content .archiv-card-text-div {
+  width: 35%;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: darkgrey;
+}
+
+/* Lightbox styling */
+.featherlight {
+  background-color: #f2f0f0 !important;  
+}
+
+.featherlight .featherlight-content {
+  background-color: #f2f0f0 !important;  
+}
+
+.featherlight .featherlight-content {
+  height: 80vh;  
+  max-height: 1000px;
+}
+
 
 /* Mobile */
 @media only screen and (max-width: 1000px) {

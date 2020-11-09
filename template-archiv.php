@@ -9,6 +9,9 @@ Template Name: Archiv
 <?php get_template_part('includes/section','navigation');?>
 
 <div id="main-content">
+	<div style="text-align: left">
+		<h1> <?php the_title(); ?> </h1>
+	</div>
 
 	<!-- THE HTML FOR THE FORM -->
 	<form id="archiv-form" action="" method="post">
@@ -38,9 +41,8 @@ Template Name: Archiv
  
 		        </ul>
 		    </div>
+		    <input class="searchbutton" type="submit" value="Suche" id="performsearch"/>
 		</div>
-		
-		<input class="searchbutton" type="submit" value="Suche" id="performsearch"/>
 		
 	</form>
 
@@ -48,12 +50,7 @@ Template Name: Archiv
 	<?php
     // Get the values from $_POST
     $selected_tags = ($_POST['tag']);
-
-	?>
-
-	<div style="text-align: left">
-		<h1> <?php the_title(); ?> </h1>
-	</div>
+    ?>
 
 	<div class="archiv-container">
 
@@ -64,7 +61,7 @@ Template Name: Archiv
 		<?php get_template_part('includes/section','archivtiles',
 		      	array( 
 	               'category_name' => 'archiv-2010-2019',
-	               'tags' => $selected_tags
+	               'tags' => ''
 	            )
 	    );?>
 		
@@ -79,7 +76,7 @@ Template Name: Archiv
 		<?php get_template_part('includes/section','archivtiles',
 		      	array( 
                     'category_name' => 'archiv-2000-2009',
-                    'tags' => $selected_tags
+                    'tags' => ''
                 )
         );?>
 		
@@ -94,7 +91,7 @@ Template Name: Archiv
 		<?php get_template_part('includes/section','archivtiles',
 		      	array( 
                     'category_name' => 'archiv-1990-1999',
-                    'tags' => $selected_tags
+                    'tags' => ''
                 )
         );?>
 		
@@ -108,7 +105,7 @@ Template Name: Archiv
 		<?php get_template_part('includes/section','archivtiles',
 		      	array( 
                     'category_name' => 'archiv-1980-1989',
-                    'tags' => $selected_tags
+                    'tags' => ''
                 )
         );?>
 		
