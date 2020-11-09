@@ -26,11 +26,22 @@
 			} ?>
 			<!-- Fill exhibition block with the appropriate content -->
 			<div class="arbeiten-single-div"> 
+				<div class="block">
+				    <div class="background">
+				        <?php the_title();?>
+				    </div>
+				    <div class="foreground">
+				        <div>
+				            <a href=<?php the_permalink();?>> 
+							
+								<div>
+		            				<img class="arbeiten-single-img" src="<?php the_post_thumbnail_url('medium-extra');?>">
+		            			</div>
 
-				<a href=<?php the_permalink();?>> 
-            		<img class="arbeiten-single-img" src="<?php the_post_thumbnail_url('medium-extra');?>">
-          
-            	</a>
+		            		</a>
+				        </div>
+				    </div>
+				</div>
 
 			</div>
 

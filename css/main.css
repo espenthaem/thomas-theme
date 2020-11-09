@@ -92,18 +92,40 @@ a:hover {
 
 .arbeiten-single-img {
 	width: 100%;
+  -webkit-transition: opacity 0.75s ease-in-out;
+  -moz-transition: opacity 0.75s ease-in-out;
+  -ms-transition: opacity 0.75s ease-in-out;
+  -o-transition: opacity 0.75s ease-in-out;
+  transition: opacity 0.75s ease-in-out;
+}
+
+.block {
+  display: flex; /* required */
+  flex-flow: row nowrap; /* required */
+}
+.block .background,
+.block .foreground {
+    box-sizing: border-box; /* required */
+    width: 100%; /* required */
+    flex: none; /* required */
+}
+.block .foreground {
+    margin-left: -100%; /* required */
+}
+
+.block .background {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .arbeiten-single-div a:hover{
   opacity: 1.0;
 }
 
-.arbeiten-single-div:hover .centered {
-  opacity: 1;
-}
-
 .arbeiten-single-div:hover .arbeiten-single-img {
-  opacity: 0.5;
+  opacity: 0.25;
 }
 
 .arbeiten-text-div {
