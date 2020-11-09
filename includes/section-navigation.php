@@ -63,7 +63,7 @@
 
 				<div onmouseover="showSubLinkText('kontakt-sub-link')" onmouseout="hideSublinkText('kontakt-sub-link')">
 			    
-			    	<a class="nav-link" href="#">Kontakt</a>
+			    	<a id="a-kontakt" class="nav-link" href="#">Kontakt</a>
 
 			    	<div id="kontakt-sub-link" class="sub-link-div">
 			    
@@ -121,14 +121,25 @@
 	    sub_link_div.style.webkitAnimationName = 'fadeIn'; 
     	sub_link_div.style.webkitAnimationDuration = '2s';
 
-	  	document.getElementById("a-text").style.opacity =  .5
+    	if (value.includes('text')) {
+	  		document.getElementById("a-text").style.opacity =  .5
+	  	}
+	  	else {
+	  		document.getElementById("a-kontakt").style.opacity =  .5
+	  	}
 	}
 
 	function hideSublinkText(value) {
 		var sub_link_div = document.getElementById(value)
 
 		sub_link_div.style.visibility = 'hidden'
-	  	document.getElementById("a-text").style.opacity =  1
+
+		if (value.includes('text')) {
+	  		document.getElementById("a-text").style.opacity =  1
+	  	}
+	  	else {
+	  		document.getElementById("a-kontakt").style.opacity =  1
+	  	}
 	    
 	}
 </script>
