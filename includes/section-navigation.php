@@ -1,8 +1,8 @@
-<div id="thomas-head">
-		<a href="<?php echo get_site_url();?>">Thomas Schulz</a>
-</div>
-
 <div id="main-navigation-div">
+
+	<div id="thomas-head">
+		<a href="<?php echo get_site_url();?>">Thomas Schulz</a>
+	</div>
 
 	<div id="navigation-bar-div" class=" flex">
 		
@@ -102,6 +102,10 @@
 
 		</ul>
 	
+	</div>
+	<!-- Add hidden element to align items properly -->
+	<div id="thomas-head" style="visibility: hidden">
+		<a href="<?php echo get_site_url();?>">Thomas Schulz</a>
 	</div>
 
 </div>

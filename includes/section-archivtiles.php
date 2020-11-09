@@ -1,5 +1,4 @@
 <div class="scrolling-wrapper">
-
 	<?php
 
 	    $query_args = array(
@@ -23,7 +22,7 @@
 	            	global $post;
 	            	$post_name = $post->post_name;
 	            ?>
-           
+	       
 	            <div class="archiv-card">
 
 	            	<a href="#" data-featherlight=<?php echo "#" . $post_name;?>>
@@ -51,7 +50,6 @@
 	            }
 	        }
 	        
-		?>
-		<?php wp_reset_query() ?>
-
+	?>
+	<?php wp_reset_query() ?>
 </div>

@@ -1,6 +1,6 @@
 /* General Styling */
 body {
-    background-color: #f2f0f0;
+    background-color: #fff;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -32,24 +32,22 @@ a:hover {
 /* Navigation */
 #main-navigation-div {
 	margin: auto;
-	width: 65%;
-	max-width: 1000px;
-	border-width: 1px;
-	border-color: lightgrey;
 	padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 #thomas-head {
 	font-weight: 400;
 	font-size: 18pt;
-	padding-top: 15px;
 	padding-left: 15px;
 }
 
 /* Navigation bar */
 #navigation-bar-div {
-    justify-content: center;
-    padding-top: 0px;
+  width: 65%;
+  justify-content: center;
+  padding-top: 0px;
 }
 
 #navigation-bar-div a {
@@ -61,6 +59,8 @@ a:hover {
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column; 
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .sub-link-div {
@@ -126,16 +126,12 @@ body.home #arbeiten-tiles-div {
 	display: block;
 }
 
-body.home #a-arbeiten {
-	opacity: 0.5;
-}
-
 /* Main Content */
 #main-content {
 	margin: auto;
 	width: 70%;
 	max-width: 1000px;
-	padding-top: 15px;
+	padding-top: 5px;
 	padding-bottom: 25px;
 }
 
@@ -252,7 +248,12 @@ background: #bbc6d5 !important;
 }
 
 .archiv-period-title {
-	text-align: right;
+	text-align: left;
+  position: relative;
+  margin-bottom: -40px;
+  padding-left: 10px;
+  z-index: 1;
+  text-decoration: underline;
 }
 
 #archiv-form {
@@ -372,16 +373,20 @@ background: #bbc6d5 !important;
 
 /* Lightbox styling */
 .featherlight {
-  background-color: #f2f0f0 !important;  
+  background-color: #fff !important;  
 }
 
 .featherlight .featherlight-content {
-  background-color: #f2f0f0 !important;  
+  background-color: #fff !important;  
 }
 
 .featherlight .featherlight-content {
   height: 80vh;  
   max-height: 1000px;
+}
+
+.featherlight .featherlight-close-icon {
+  background-color: black !important;
 }
 
 

@@ -9,10 +9,6 @@ Template Name: Archiv
 <?php get_template_part('includes/section','navigation');?>
 
 <div id="main-content">
-	<div style="text-align: left">
-		<h1> <?php the_title(); ?> </h1>
-	</div>
-
 	<!-- THE HTML FOR THE FORM -->
 	<form id="archiv-form" action="" method="post">
 	    
@@ -52,65 +48,65 @@ Template Name: Archiv
     $selected_tags = ($_POST['tag']);
     ?>
 
-	<div class="archiv-container">
+    <div class="archiv-container">
 
 		<div class="archiv-period-title">
-			<h2>2010-2019</h2>
+			<p>2010 - 2019</p>
 		</div>
 		
 		<?php get_template_part('includes/section','archivtiles',
 		      	array( 
-	               'category_name' => 'archiv-2010-2019',
-	               'tags' => ''
-	            )
-	    );?>
+		            'category_name' => 'archiv-2010-2019',
+		            'tags' => $selected_tags
+		        )
+		);?>
+		
+	</div>
+
+    <div class="archiv-container">
+
+		<div class="archiv-period-title">
+			<p>2000 - 2009</p>
+		</div>
+		
+		<?php get_template_part('includes/section','archivtiles',
+		      	array( 
+		            'category_name' => 'archiv-2000-2009',
+		            'tags' => $selected_tags
+		        )
+		);?>
 		
 	</div>
 
 	<div class="archiv-container">
 
 		<div class="archiv-period-title">
-			<h2>2000-2009</h2>
+			<p>1990 - 1999</p>
 		</div>
 		
 		<?php get_template_part('includes/section','archivtiles',
 		      	array( 
-                    'category_name' => 'archiv-2000-2009',
-                    'tags' => ''
-                )
-        );?>
+		            'category_name' => 'archiv-1990-1999',
+		            'tags' => $selected_tags
+		        )
+		);?>
 		
 	</div>
 
 	<div class="archiv-container">
 
 		<div class="archiv-period-title">
-			<h2>1990-1999</h2>
+			<p>1980 - 1989</p>
 		</div>
 		
 		<?php get_template_part('includes/section','archivtiles',
 		      	array( 
-                    'category_name' => 'archiv-1990-1999',
-                    'tags' => ''
-                )
-        );?>
+		            'category_name' => 'archiv-1980-1989',
+		            'tags' => $selected_tags
+		        )
+		);?>
 		
 	</div>
-
-	<div class="archiv-container">
-
-		<div class="archiv-period-title">
-			<h2>1980-1989</h2>
-		</div>
-		<?php get_template_part('includes/section','archivtiles',
-		      	array( 
-                    'category_name' => 'archiv-1980-1989',
-                    'tags' => ''
-                )
-        );?>
-		
-	</div>
-
 
 </div>
 

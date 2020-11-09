@@ -21,6 +21,10 @@ function wpse_enqueue_page_template_styles() {
     if ( is_page_template( 'template-arbeiten.php' ) ) {
         wp_enqueue_style( 'template-texts', get_stylesheet_directory_uri() . '/css/arbeiten.css' );
     }
+
+    if ( is_page_template( 'template-archiv.php' ) ) {
+        wp_enqueue_style( 'template-texts', get_stylesheet_directory_uri() . '/css/archiv.css' );
+    }
 }
 add_action( 'wp_enqueue_scripts', 'wpse_enqueue_page_template_styles' );
 
