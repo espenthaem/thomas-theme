@@ -99,6 +99,10 @@ a:hover {
   transition: opacity 0.75s ease-in-out;
 }
 
+.mobile_arbeiten_title {
+  display: none;
+}
+
 .block {
   display: flex; /* required */
   flex-flow: row nowrap; /* required */
@@ -432,6 +436,24 @@ background: #bbc6d5 !important;
 
   #thomas-head-2 {
     display: none;
+  }
+
+  .mobile_arbeiten_title{
+    display: block;
+    text-align: center;
+    font-size: 22pt;
+  }
+
+  .block {
+    display: block;
+  }
+
+  .block .background {
+    display: none;
+  }
+
+  .block .foreground {
+    margin-left: 0%;
   }
 
   #main-content {

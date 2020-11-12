@@ -41,6 +41,9 @@
 		            		</a>
 				        </div>
 				    </div>
+				    <div class="mobile_arbeiten_title">
+				        <?php the_title();?>
+				    </div>
 				</div>
 
 			</div>
