@@ -25,6 +25,29 @@
 	       
 	            <div class="archiv-card">
 
+	            	<div style="padding-top: 25px;"></div>
+
+					<a href="<?php echo "." . $post_name;?>" data-featherlight>
+						<div class="archiv-single-img">
+								<img src=<?php the_post_thumbnail_url('large');?>>
+						</div>
+					</a>
+
+					<div class="<?php echo $post_name;?> archiv-card-feather-div">
+						
+						<div class="archiv-single-img">
+								<img src=<?php the_post_thumbnail_url('large');?>>
+						</div>
+
+						<div class="archiv-card-text-div">
+							<h4><?php the_title();?></h4>
+
+							<?php the_content();?>
+						</div>
+
+					</div>
+
+	            	<!--
 	            	<a href="#" data-featherlight=<?php echo "#" . $post_name;?>>
 
 						<div id=<?php echo $post_name;?> class="archiv-card-feather-div">
@@ -36,11 +59,14 @@
 								<?php the_title();?>
 
 								<?php the_content();?>
+
+								<a class="hallo" ref="#">Hallo</a>
 							</div>
 
 						</div>
 
-					</a>
+					</a
+					-->
 					
 	        	</div>
 	            

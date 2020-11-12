@@ -352,8 +352,8 @@ background: #bbc6d5 !important;
   height: 500px;
 }
 
-.archiv-card-feather-div {
-  display: flex !important;
+.archiv-card .archiv-card-feather-div {
+  display: none;
 }
 
 .scrolling-wrapper::-webkit-scrollbar {
@@ -375,6 +375,7 @@ background: #bbc6d5 !important;
 .featherlight-content .archiv-card-feather-div {
   height: 80vh;
   max-height: 1000px;
+  display: flex !important;
 }
 
 .featherlight-content .archiv-single-img {
@@ -388,6 +389,10 @@ background: #bbc6d5 !important;
   max-height: 100%;
   width: auto;
   height: auto;
+}
+
+.featherlight-content a {
+  color: #000 !important;
 }
 
 .featherlight-content .archiv-card-text-div {
