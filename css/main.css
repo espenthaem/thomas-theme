@@ -32,12 +32,12 @@ a:hover {
 /* Navigation */
 #main-navigation-div {
 	margin: auto;
-	padding-top: 10px;
+	padding-top: 25px;
   display: flex;
   justify-content: space-between;
 }
 
-#thomas-head {
+.thomas-head {
 	font-weight: 400;
 	font-size: 18pt;
 	padding-left: 15px;
@@ -415,17 +415,27 @@ background: #bbc6d5 !important;
 /* Mobile */
 @media only screen and (max-width: 1000px) {
   #main-navigation-div {
-    width: 90%; 
-    padding-left: 5%;
+    width: 100%; 
+    padding-left: 0%;
     font-size: 22pt;
+    display: block;
   }
 
-  #thomas-head {
+  #navigation-bar-div {
+    width: 100%;
+  }
+
+  .thomas-head {
     font-size: 29pt;
+    padding-left: 5%;
+  }
+
+  #thomas-head-2 {
+    display: none;
   }
 
   #main-content {
-    width: 100%;
+    width: 100% !important;
     margin-left: 0px;
     padding-left: 5%;
     padding-right: 5%;
