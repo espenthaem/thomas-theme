@@ -188,6 +188,11 @@ body.home #arbeiten-tiles-div {
 	text-decoration: underline;
 }
 
+#radio-works-list ul {
+  padding-left: 25px;
+  padding-top: 15px;
+}
+
 .arbeiten-featured-media {
 	width: 50%;
 }
