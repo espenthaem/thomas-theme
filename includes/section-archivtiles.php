@@ -25,9 +25,7 @@
 	       
 	            <div class="archiv-card">
 
-	            	<div style="padding-top: 25px;"></div>
-
-					<a href="<?php echo "." . $post_name;?>" data-featherlight>
+	            	<a href="<?php echo "." . $post_name;?>" data-featherlight>
 						<div class="archiv-single-img">
 								<img src=<?php the_post_thumbnail_url('large');?>>
 						</div>
