@@ -60,7 +60,7 @@ Template Name: Arbeiten
 
 		<!-- Insert the content -->
 		<div class="single-text-div">
-			<?php the_excerpt();?>
+			<?php the_content();?>
 		</div>
 
 		<!-- Check post metadata for vimeo link, insert as first item after content if so -->
