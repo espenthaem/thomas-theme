@@ -80,4 +80,10 @@ Template Name: Arbeiten
 
 </div>
 
+<!-- Underline work title in category header -->
+<script>
+	var els = document.querySelectorAll("a[href='<?php echo the_permalink();?>']");
+	els[0].style.textDecoration = "underline";
+</script>
+
 <?php get_footer();?>
