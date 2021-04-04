@@ -1,7 +1,7 @@
 /* General Styling */
 body {
     background-color: #fff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Arimo', sans-serif;
 }
 
 .flex {
@@ -35,6 +35,10 @@ a:hover {
 	padding-top: 25px;
   display: flex;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: #FFF;
+  z-index: 100;
 }
 
 .thomas-head {
@@ -155,7 +159,7 @@ body.home #arbeiten-tiles-div {
 /* Main Content */
 #main-content {
 	margin: auto;
-	width: 70%;
+	width: 65%;
 	max-width: 1000px;
 	padding-top: 5px;
 	padding-bottom: 25px;
@@ -211,9 +215,9 @@ body.home #arbeiten-tiles-div {
 }
 
 .arbeiten-audio {
-	padding-top: 25px;
-	width: 20%;
-	margin-left: 50%;
+	padding-top: 75px;
+	width: 40%;
+	margin-left: 0%;
 	min-width: 200px;
 	padding-bottom: 25px;
 }
@@ -431,7 +435,7 @@ background: #bbc6d5 !important;
   #main-navigation-div {
     width: 100%; 
     padding-left: 0%;
-    font-size: 22pt;
+    font-size: 30pt;
     display: block;
   }
 
@@ -439,8 +443,14 @@ background: #bbc6d5 !important;
     width: 100%;
   }
 
+  #navigation-bar-div li {
+    padding-left: 5px;
+    padding-right: 5px;
+    max-height: 75px;
+  }
+
   .thomas-head {
-    font-size: 29pt;
+    font-size: 37pt;
     padding-left: 5%;
   }
 
@@ -450,8 +460,10 @@ background: #bbc6d5 !important;
 
   .mobile_arbeiten_title{
     display: block;
-    text-align: center;
-    font-size: 22pt;
+    text-align: right;
+    font-size: 30pt;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 
   .block {
@@ -477,6 +489,14 @@ background: #bbc6d5 !important;
   	flex-direction: column;
   }
 
+  .arbeiten-row-div {
+    display: block;
+  }
+
+  .arbeiten-single-div {
+    width: 100%;
+  }
+
   #main-content .arbeiten-featured-media {
   	width: 100%;
   }
@@ -490,32 +510,31 @@ background: #bbc6d5 !important;
   	margin-left: 0%;
   }
   #main-content p {
-    font-size: 22pt; 
+    font-size: 32pt; 
   }
 
   #main-content a {
-    font-size: 22pt; 
+    font-size: 32pt; 
   }
 
   #main-content h2 {
-  	font-size: 27pt;
+  	font-size: 37pt;
   }
 
   #radio-works-list {
-    font-size: 22pt;
+    font-size: 32pt;
   }
 
   #archiv-form {
-  	font-size: 22pt;
+  	font-size: 3pt;
   }
 
   .archiv-card {
-  	width: 95% !important;
   	margin-right: 5% !important;
   }
 
   .scrolling-wrapper::-webkit-scrollbar {
-  	width: 1em;
+  	width: 3em;
   	height: 20px;
   }
 

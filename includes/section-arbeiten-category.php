@@ -114,21 +114,22 @@
 			<img class="arbeiten-main-img" src="<?php echo get_the_post_thumbnail_url($category_id, 'medium-extra');?>">
 		<?php } ?>
 
+		<div class="arbeiten-audio">
+
+			<?php 
+
+			$attr = array(
+		    	'src'      => get_post_meta($category_id, 'audio-link', true),
+		    	'loop'     => '',
+		    	'autoplay' => '',
+		    	'preload' => 'none'
+			);
+
+		   echo wp_audio_shortcode($attr); ?>
+
+		</div>
+
 	</div>
 
 </div>
 
-<div class="arbeiten-audio">
-
-	<?php 
-
-	$attr = array(
-    	'src'      => get_post_meta($category_id, 'audio-link', true),
-    	'loop'     => '',
-    	'autoplay' => '',
-    	'preload' => 'none'
-	);
-
-   echo wp_audio_shortcode($attr); ?>
-
-</div>
