@@ -86,17 +86,19 @@
 	    	}
 	    	wp_reset_query();
 
-	    	?>
-
-	    	<!-- Add Photographic Works href -->
-	    	<li>
-	    		<a href="<?php echo get_site_url();?>/photographic-works-eurotunnel-1989-1994/">
-	    			Photographic works - Eurotunnel (1989 - 1994)
-	    		</a>
-	    	</li>
-
-	    	<?php
 		}
+
+    	?>
+
+    	<!-- Add Photographic Works href -->
+    	<li>
+    		<a href="<?php echo get_site_url();?>/photographic-works-eurotunnel-1989-1994/">
+    			Photographic works - Eurotunnel (1989 - 1994)
+    		</a>
+    	</li>
+
+    	<?php
+
 
 		echo "</ul>";
 		?>
