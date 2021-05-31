@@ -32,8 +32,22 @@
 				    </div>
 				    <div class="foreground">
 				        <div>
-				            <a href=<?php the_permalink();?>> 
-							
+				        	<?php
+				        	if (get_the_title() == 'The European Sculpture') {
+				        		$link = get_site_url()."/not-here-but-under-the-sea-1992/";
+				        	}
+				        	elseif (get_the_title() == 'Raum Als Instrument') {
+				        		$link = get_site_url()."/quiems-offentliches-fernsprechtuch-1988-89/";
+				        	}
+				        	elseif (get_the_title() == 'European Parliament / Mikrophonie') {
+				        		$link = get_site_url()."/contract-tendencies-1999/";
+				        	}
+				        	elseif (get_the_title() == 'Landscaping') {
+				        		$link = get_site_url()."/listen-to-the-views-nuclear-shoes-2013/";
+				        	}
+				        	?>
+				        	
+				            <a href=<?php echo $link;?>>
 								<div>
 		            				<img class="arbeiten-single-img" src="<?php the_post_thumbnail_url('medium-extra');?>">
 		            			</div>
