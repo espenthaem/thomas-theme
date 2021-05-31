@@ -425,7 +425,7 @@ background: #bbc6d5 !important;
 
 /* Lightbox styling */
 .featherlight {
-  background-color: #fff !important;  
+  background-color: #000 !important;  
 }
 
 .featherlight .featherlight-content {
