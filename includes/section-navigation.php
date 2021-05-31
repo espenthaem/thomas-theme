@@ -22,43 +22,7 @@
 		-->
 
 			<li>
-				<div onmouseover="showSubLinkText('text-sub-link')" onmouseout="hideSublinkText('text-sub-link')">
-				    
-					<a id="a-text" class="nav-link" href="#">Text</a>
-
-				    <div id="text-sub-link"  class="sub-link-div">
-
-				    	<?php
-
-						$post = get_page_by_title('Text');
-
-						$args = array(
-						    'post_type'      => 'page',
-						    'posts_per_page' => -1,
-						    'post_parent'    => $post->ID,
-						    'order'          => 'ASC',
-						    'orderby'        => 'menu_order'
-						 );
-
-						$parent = new WP_Query($args);
-
-						if ($parent->have_posts()) {
-							$counter = 0;  
-							while ($parent->have_posts()){
-								$parent->the_post(); 
-									?>
-									<a href= <?php the_permalink();?>>
-										<?php the_title();?> 
-					            	</a>
-								<?php
-							}
-						} ?>
-
-						<?php wp_reset_postdata(); ?>
-
-				    </div>
-
-				</div>
+			    <a class="nav-link" href="<?php echo get_site_url();?>/Bio/">Bio</a>
 			</li>
 
 			<li>
