@@ -11,6 +11,7 @@
 		    	<a id="a-arbeiten" class="nav-link" href="<?php echo get_site_url();?>/arbeiten/">Arbeiten</a>
 		  	</li>
 
+		<!--
 			<li>
 				<a id="a-archiv" class="nav-link" href="<?php echo get_site_url();?>/archiv/">Archiv</a>
 			</li>
@@ -18,6 +19,7 @@
 			<li>
 			    <a class="nav-link" href="<?php echo get_site_url();?>/register/">Register</a>
 			</li>
+		-->
 
 			<li>
 				<div onmouseover="showSubLinkText('text-sub-link')" onmouseout="hideSublinkText('text-sub-link')">

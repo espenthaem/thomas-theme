@@ -1,7 +1,8 @@
 /* General Styling */
 body {
-    background-color: #fff;
-    font-family: 'Arimo', sans-serif;
+    background-color: #000;
+    font-family: 'Roboto', sans-serif;
+    color: #FFF;
 }
 
 .flex {
@@ -9,13 +10,13 @@ body {
 }
 
 a {
-	color: #000;
+	color: #FFF;
 }
 
 a:hover {
 	opacity: 0.70;
 	text-decoration: none;
-	color: #000;
+	color: #FFF;
 }
 
 .dropdown a::after {
@@ -37,7 +38,7 @@ a:hover {
   justify-content: space-between;
   position: sticky;
   top: 0;
-  background-color: #FFF;
+  background-color: #000;
   z-index: 100;
 }
 
@@ -45,6 +46,7 @@ a:hover {
 	font-weight: 400;
 	font-size: 18pt;
 	padding-left: 15px;
+  color: #FFF;
 }
 
 /* Navigation bar */
@@ -55,7 +57,7 @@ a:hover {
 }
 
 #navigation-bar-div a {
-	color: #000;
+	color: #FFF;
 	font-weight: 400
 }
 
