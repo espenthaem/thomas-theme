@@ -88,17 +88,47 @@
 
 		}
 
-    	?>
 
-    	<!-- Add Photographic Works href -->
-    	<li>
-    		<a href="<?php echo get_site_url();?>/photographic-works-eurotunnel-1989-1994/">
-    			Photographic works - Eurotunnel (1989 - 1994)
-    		</a>
-    	</li>
-
-    	<?php
-
+		if ($args['category_name'] == 'the-european-sculpture') {
+	    	?>
+	    	<!-- Add Photographic Works href -->
+	    	<li>
+	    		<a href="<?php echo get_site_url();?>/photographic-works-i/">
+	    			Photographic Works
+	    		</a>
+	    	</li>
+	    	<?php
+    	}
+    	elseif ($args['category_name'] == 'raum-als-instrument') {
+	    	?>
+	    	<!-- Add Photographic Works href -->
+	    	<li>
+	    		<a href="<?php echo get_site_url();?>/photographic-works-ii/">
+	    			Photographic Works
+	    		</a>
+	    	</li>
+	    	<?php
+    	}
+    	elseif ($args['category_name'] == 'european-parliament-mikrophonie') {
+	    	?>
+	    	<!-- Add Photographic Works href -->
+	    	<li>
+	    		<a href="<?php echo get_site_url();?>/photographic-works-iii/">
+	    			Photographic Works
+	    		</a>
+	    	</li>
+	    	<?php
+    	}
+    	elseif ($args['category_name'] == 'landscaping') {
+	    	?>
+	    	<!-- Add Photographic Works href -->
+	    	<li>
+	    		<a href="<?php echo get_site_url();?>/photographic-works-iv/">
+	    			Photographic Works
+	    		</a>
+	    	</li>
+	    	<?php
+    	}
 
 		echo "</ul>";
 		?>
