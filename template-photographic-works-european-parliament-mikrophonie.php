@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Photographic Works
+Template Name: Photographic Works European Parliament Miktrophonie
 */
 ?>
 
@@ -20,8 +20,8 @@ Template Name: Arbeiten
 		/* Save post ID for later use, and set post variable to category page */
 		$single_ID = $post->ID;
 		
-		/* Force the-european-sculpture category for radio works */
-		$post = get_page_by_path('/arbeiten/' . 'the-european-sculpture');
+		/* Force the european-parliament-mikrophonie category for radio works */
+		$post = get_page_by_path('/arbeiten/' . 'european-parliament-mikrophonie');
 		/*Load category header based on the category post variable */
  		get_template_part('includes/section','arbeiten-category'); 
 		
