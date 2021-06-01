@@ -19,12 +19,22 @@ Template Name: Arbeiten
 	<?php 
 		/* Save post ID for later use, and set post variable to category page */
 		$single_ID = $post->ID;
-		
-		/* Force the-european-sculpture category for radio works */
-		$post = get_page_by_path('/arbeiten/' . 'the-european-sculpture');
-		/*Load category header based on the category post variable */
- 		get_template_part('includes/section','arbeiten-category'); 
-		
+		$single_category = get_the_category($single_ID)[0]->name;
+
+		if (is_int(strpos($single_category, 'archiv'))) {
+
+		}
+		elseif (is_int(strpos($single_category, 'radio-works'))) {
+			/* Force the-european-sculpture category for radio works */
+			$post = get_page_by_path('/arbeiten/' . 'the-european-sculpture');
+			/*Load category header based on the category post variable */
+ 			get_template_part('includes/section','arbeiten-category'); 
+		}
+		else{
+			$post = get_page_by_path('/arbeiten/' . $single_category);
+			/*Load category header based on the category post variable */
+ 			get_template_part('includes/section','arbeiten-category'); 
+		}
 	?>
 
 	<!-- Reset post variable -->
