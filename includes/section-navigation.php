@@ -29,7 +29,7 @@
 
 				<div onmouseover="showSubLinkText('kontakt-sub-link')" onmouseout="hideSublinkText('kontakt-sub-link')">
 			    
-			    	<a id="a-kontakt" class="nav-link" href="#">Kontakt</a>
+			    	<a id="a-kontakt" class="nav-link" href="<?php echo get_site_url();?>/Kontakt/">Kontakt</a>
 
 			    	<div id="kontakt-sub-link" class="sub-link-div">
 			    
